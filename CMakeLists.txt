@@ -5,6 +5,7 @@
 # see: https://stackoverflow.com/questions/55217771/boostcmake-no-suitable-build-variant
 set(BUILD_SHARED_LIBS ON)
 find_package(Boost REQUIRED)
+add_compile_definitions(BOOST_NO_CXX98_FUNCTION_BASE)
 
 # the DWA installation of pxrConfig.cmake lives in
 # the usd_imaging Rez package. To work correctly, it
